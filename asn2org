@@ -191,18 +191,6 @@ def clean(name, asn, source):
         previous = cleaned
         cleaned = cleaned.rstrip(" ,.-")
         for prefix in [
-            "LLC",
-            "Limited",
-            "Pty",
-            "Co",
-            "AG",
-            "GmbH",
-            "Ltd",
-            "B.V",
-            "Inc",
-            "SARL",
-            "S.A",
-            "S.p.A",
             f"AS{asn}",
             f"(AS{asn})",
             f"AS {asn}",
